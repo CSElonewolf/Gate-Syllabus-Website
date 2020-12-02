@@ -14,5 +14,5 @@ if (date % 2 == 1) {
 }
 else if (date % 2 == 0) {
 	document.getElementById("subjects").innerHTML = `<li><img src="maths.svg" style="width:20px"> MATHS</li><li><img src="dld.svg" style="width:20px"> DIGITAL LOGIC</li>
-	<li><img src="gate.svg" style="width:20px"> GATE LECTURES</li><li><img src="python.svg" style="width:20px"> PYHTON VIDEOS</li>`
+	<li><img src="gate.svg" style="width:20px"> GATE LECTURES</li><li><img src="python.svg" style="width:20px"> PYTHON VIDEOS</li>`
 }
