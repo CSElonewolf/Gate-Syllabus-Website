@@ -7,7 +7,7 @@ function veiwpdf(val) {
 		var adobeDCView = new AdobeDC.View({clientId: "d8e9db962bc8409f93cb0aa76aa9d5ab", divId: "adobe-dc-view"});
 		adobeDCView.previewFile({
 			content:{location: {url: `${val}`}},
-			metaData:{fileName: "Bodea Brochure.pdf"}
+			metaData:{fileName: `${val}`}
 		}, {embedMode: "SIZED_CONTAINER"});
 	});
 	obj.setAttribute("data", val);
