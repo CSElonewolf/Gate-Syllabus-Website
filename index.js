@@ -3,13 +3,13 @@ function veiwpdf(val) {
 	let obj = document.querySelector("object");
 	obj.removeAttribute("data");
 	val = val + ".pdf"
-	document.addEventListener("adobe_dc_view_sdk.ready", function(){
+
 		var adobeDCView = new AdobeDC.View({clientId: "d8e9db962bc8409f93cb0aa76aa9d5ab", divId: "adobe-dc-view"});
 		adobeDCView.previewFile({
 			content:{location: {url: `${val}`}},
 			metaData:{fileName: `${val}`}
 		}, {embedMode: "SIZED_CONTAINER"});
-	});
+
 	obj.setAttribute("data", val);
 	console.log(obj.getAttribute("data"))
 }
